@@ -1,5 +1,11 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+
+global $APPLICATION;
+
 $APPLICATION->SetPageProperty("title", "Посты");
 $APPLICATION->SetTitle("Посты");
-?>Здесь будут посты<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+
+$APPLICATION->IncludeComponent('tp:posts', '');
+
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
