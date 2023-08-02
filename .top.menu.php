@@ -41,6 +41,13 @@ $aMenuLinks = Array(
 		Array(), 
 		Array(), 
 		"" 
+	),
+	Array(
+		"Посты", 
+		"/posts.php", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>
